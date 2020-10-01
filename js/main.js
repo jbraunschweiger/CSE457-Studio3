@@ -11,7 +11,7 @@ var sandwiches = [
 
 var svg = d3.select("div").append("svg").attr("width",500).attr("height", 500);
 
-d3.csv("./data/sandwiches.csv").then(data => {
+d3.csv("https://raw.githubusercontent.com/jbraunschweiger/CSE457-Studio3/master/data/sandwiches.csv?token=AF7MUKUYZPQESBI4QTNOCGS7P5F62").then(data => {
     svg.selectAll("circle")
     .data(data)
     .enter()
@@ -39,3 +39,4 @@ d3.csv("./data/sandwiches.csv").then(data => {
 }).catch(error =>{
     console.error("Error loading data.");
 });
+

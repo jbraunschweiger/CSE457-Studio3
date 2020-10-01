@@ -1,4 +1,7 @@
-d3.select("div").append("h2").text("Dynamic Content");
+d3.select("div").append("h4").text("Dynamic Content");
+
+d3.select("div").append("br");
+d3.select("div").append("h1").text("Activity 2");
 
 var sandwiches = [
     { name: "Thesis", price: 7.95, size: "large" },
@@ -40,11 +43,13 @@ d3.csv("https://raw.githubusercontent.com/jbraunschweiger/CSE457-Studio3/master/
     console.error("Error loading data.");
 });
 
+d3.select("div").append("h1").text("Activity 3");
+
 d3.csv("https://raw.githubusercontent.com/jbraunschweiger/CSE457-Studio3/master/data/cities.csv?token=AF7MUKWPCPQB4MYZ47E7POK7P5GNM").then(data => {
     var filteredData = data.filter(function(d){
         return d.eu === "true";
     });
-    d3.select("div").append("h2").text(filteredData.length + " Cities");
+    d3.select("div").append("h3").text(filteredData.length + " European Cities");
     var citySVG = d3.select("div").append("svg").attr("width",700).attr("height", 550);
 
     citySVG.selectAll("cirle")
@@ -88,3 +93,5 @@ d3.csv("https://raw.githubusercontent.com/jbraunschweiger/CSE457-Studio3/master/
         })
         .attr("class", "city-label");
 });
+
+d3.select("div").append("br");

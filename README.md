@@ -1,6 +1,6 @@
-# Studio 2
+# Studio 3
 Jakob Braunschweiger - 466081
 
-Partners: David Yang, Isaac Bock
+Partners: Isaac Bock
 
-External Resources: I did not use external resources.
+External Resources: I used [W3 Schools](https://www.w3schools.com) for documentation

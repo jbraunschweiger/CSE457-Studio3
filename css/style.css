@@ -1,38 +1,16 @@
-/* PRE-CONFIGURED STYLES */
 
+.city-label {
+  font-size: 11px;
+  text-anchor: middle;
+}
 
-/****************/
-/*   BAR-CHART  */
-/****************/
-
-.bar {
+.city-dot {
   fill: brown;
 }
 
-.bar:hover {
-  fill: slategray;
+.city-dot:hover {
+  fill: gray;
 }
-
-.axis {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.x-axis path {
-  display: none;
-}
-
-.axis-title {
-	fill: #888;
-	font-size: 11px;
-}
-
 
 /****************/
 /*   TOOLTIPS   */
